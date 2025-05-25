@@ -1,0 +1,143 @@
+*{
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+}
+	body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	color: black;
+	margin-top: 0px;
+	
+}
+
+.heading{
+	     color: rgb(16, 47, 74);
+       padding:20px;
+       font-size: 40px;
+       margin-left: 600px;
+}
+
+nav,footer{
+	background-color: #369c9c;
+	padding: 5px;
+	padding-top:5px;
+}
+
+nav a, footer a,nav span {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    display:block;
+    float: left;
+    color:black;
+}
+
+
+nav,footer{
+    display:flex;
+    
+    overflow: hidden;
+   
+}
+
+.workshop{
+	margin-left: 670px;
+}
+
+h3{
+	margin-left: 290px;
+}
+.Timeline{
+	margin-left: 500px;
+}
+
+.bttn:hover{
+	cursor:pointer;
+	
+}
+
+.sign-up{
+	margin-left:auto;
+}
+
+
+main {
+	color:rgb(15, 11, 11);
+	margin: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 35px;
+	margin: 30px;
+	margin-left: 520px;
+}
+
+.projects{
+	font-size: 35px;
+	margin: 30px;
+	margin-left: 550px;
+}
+
+p{
+	font-size: 20px;
+}
+footer {
+	
+	padding: 5px;
+	text-align: left;
+    margin-top: 200px;
+}
+
+.Reg{
+	margin:15px;
+	padding:20px;
+	background-color:black;
+	color:white;
+	border-radius: 300px;
+	font-size: 20px;
+}
+
+.buttons{
+	margin-inline: 350px;
+	column-gap: 10cm;
+}
+
+.link{
+	text-decoration:none;
+	color:rgb(169, 50, 23);
+}
+
+
+
+.carousel {
+	background: #EEE;
+  }
+  
+  .carousel-cell {
+	width: 50%;
+	height: 500px;
+	margin-right: 10px;
+	border-radius: 5px;
+	counter-increment: carousel-cell;
+  }
+  
+  /* cell number 
+  .carousel-cell:before {
+	display: block;
+	text-align: center;
+	content: counter(carousel-cell);
+	line-height: 200px;
+	font-size: 80px;
+	color: white;
+  }*/
+  
+  

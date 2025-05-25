@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Add Projects</title>
+  <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/profile.css">
+
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+<div class="wrapper">
+	<section class="left-section">
+
+					<div class="job">
+				
+				<h1 class="title about">About me</h1>
+			<h3>Contact</h3>
+			<ul class="contact-list">
+				<li class="address">Industrieweg 232, 9000 Gent</li>
+				<li class="phone">+32 345 34 34 </li>
+				<li class="mail">satyendranath@123.com</li>
+			</ul>
+			</div>
+	</section>
+	<section class="right-section">
+		<div class="about-user">
+			<h1 class="user-name">XYZ</h1>
+			<h5 class="current-job">P.H.D.</h5>
+			<p class="info">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a dictum sem, a tempor purus. Aliquam fermentum varius fringilla. Morbi nibh lacus, scelerisque eu lacinia condimentum, efficitur in lorem. Nulla facilisi. Cras molestie risus at urna porta finibus. Duis at turpis aliquam, commodo nisl sed, finibus lorem.</p>
+			
+		</div>
+			<div class="skills">
+				<h1 class="title">Publications</h1>
+				<ul>
+					<li>AI/ML:1</li>
+					<li>Cyber Security: 1</li>
+				</ul>
+			</div>
+			<div class="skills">
+				<h1 class="title">Research Papers</h1>
+				<ul>
+					<a href="../static/research papers/ml dl.pdf" style="text-decoration: none; color:lightskyblue;"><li>AI/ML</li></a>
+					<a href="../static/research papers/cyber security.pdf" style="text-decoration: none; color: lightskyblue;"><li>Cyber Security</li></a>
+					
+				</ul>
+			</div>
+			<br>
+			<br>
+			<div class="skills">
+	
+        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Add Projects</button>
+			</div>
+    </section>
+  </div>
+<!-- partial:index.partial.html -->
+<div class="container">
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <!-- modal dialog -->
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- modal header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="mohe" >
+
+          </div>
+        </div>
+        <!-- end modal header-->
+        <!-- modal body -->
+        <div class="modal-body">
+          <form action="/api/user/upload" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <legend> Project information:</legend>
+              <div class="form-group col-xs-6">
+              </div>
+
+              <div class="form-group col-xs-6">
+                <label for="proj_name" style="margin-right: 150px;"> Project Name: *</label>
+                <input type="text" name="name" class="form-control" id="email">
+              </div>
+            </fieldset>
+
+            <fieldset>
+              
+             
+              <div class="form-group col-xs-12">
+                <label for="comment"> About project: </label>
+                <textarea class="form-control" name="desc" rows="5" id="comment"></textarea>
+              </div>
+              <div class="form-group col-xs-12">
+                <label for="comment"> Uplod paper </label>
+                <input type="file" name="file" accept="pdf/*" onchange="loadFile(event)">
+            <p><img id="output" width="200"/></p>
+            <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output');
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script>
+              </div>
+             
+   
+                </div>
+            </fieldset>
+            <div class="modal-footer">
+              <div class="mohe">
+                <button type="submit" class="btn btn-default btn-md btn-sm"> SEND</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end modal body -->
+        <!-- modal footer-->
+        <!-- end modal footer -->
+      </div>
+      <!-- end modal content-->
+    </div>
+    <!-- end modal dialog-->
+  </div>
+</div>
+<!-- end modal -->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+</body>
+</html>

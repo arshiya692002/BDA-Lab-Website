@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+body {
+  background:  rgb(244, 238, 229);
+  font-family: "open sans";
+  line-height: 1.5;
+  margin-top: 100px;
+}
+
+.wrapper {
+  padding: 1rem;
+  background: #FFFFFF;
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  -webkit-flex: 0 1 33.33%;
+  -ms-flex: 0 1 33.33%;
+  flex: 0 1 33.33%;
+  min-width: 33.333%;
+}
+
+.right-section {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.profile-picture {
+  max-width: 100%;
+}
+.profile-picture img {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto";
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  border-bottom: 1px solid gray;
+  color: black;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.description {
+  color: gray;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0;
+  text-align: left;
+  color: gray;
+}
+
+.user-name {
+  font-size: 2rem;
+}
+
+.current-job {
+  color: #2b98f0;
+}
+
+.info {
+  margin-top: 1rem;
+  color: gray;
+}
+
+.about::before {
+  font-family: "FontAwesome";
+  content: "";
+  margin-right: 5px;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+.contact-list li::before {
+  font-family: "FontAwesome";
+  margin-right: 5px;
+  color: black;
+}
+
+.address::before {
+  content: "";
+}
+
+.phone::before {
+  content: "";
+}
+
+.mail::before {
+  content: "";
+}
+
+.website::before {
+  content: "";
+}
+
+a {
+  color: #2b98f0;
+}

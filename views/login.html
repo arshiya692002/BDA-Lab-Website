@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="/css/login.css" />
+  <title>Document</title>
+</head>
+
+<body background="">
+  <div class="container">
+    <h1>Login</h1>
+    <div class="error">
+      <p onclick="hide_error()">X</p>
+      <div class="error-msz">error msz</div>
+    </div>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" name="username" />
+      <label for="password">Password</label>
+      <input type="password" name="password" />
+      <button type="submit" id="sub-btn">Log-In</button>
+      <BR>
+      No account? <a href="/api/auth/register" class="link" style="text-decoration: none; color:green;">Sign Up</a>
+    </form>
+  </div>
+</body>
+<script src="/js/login.js"></script>
+
+</html>

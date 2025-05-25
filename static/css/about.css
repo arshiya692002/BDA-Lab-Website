@@ -1,0 +1,28 @@
+.heading{
+    color: rgb(16, 47, 74);
+  padding:20px;
+  font-size: 40px;
+  margin-left: 600px;
+}
+
+footer{
+	background-color: #369c9c;
+	padding: 5px;
+	padding-top:5px;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    display:block;
+    float: left;
+    color:black;
+}
+
+footer{
+    display:flex; 
+    overflow: hidden;
+   margin: 0px;
+   margin-top: 210px;
+}

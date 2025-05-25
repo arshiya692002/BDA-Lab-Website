@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            background-color: rgb(244, 238, 229);
+        }
+
+        .signup-form {
+            background-color: white;
+            border-radius: 35px;
+            box-shadow: 0px 0px 10px #ccc;
+            padding: 20px;
+            width: 400px;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid rgb(137, 137, 137);
+            margin-top: 10px;
+            outline: none;
+        }
+
+        input:hover,
+        input:focus {
+            border: 10px;
+            outline: 10px;
+            box-shadow: 0px;
+
+        }
+
+        .inp {
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        .fa {
+            padding: 16px;
+            color: black;
+            font-weight: bold;
+        }
+
+        button {
+            border: none;
+            background-color: green;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-left: 152px;
+            width: 100px;
+
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .error {
+            display: none;
+        }
+        .loader{
+            animation: rotateme 0.5s linear infinite;
+        }
+        @keyframes rotateme {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        #sub-btn{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body background="">
+    <div class="signup-form">
+        <h2>Sign Up</h2>
+        <div class="error">
+            <p onclick="hide_error()">X</p>
+            <div class="error-msz">error msz</div>
+        </div>
+        <form method="post">
+            <div class="inp">
+                <label for="Username" id="Username">Username <br></label>
+                <input type="text" name="Username" id="username_input" />
+            </div>
+            <div class="inp">
+                <label for="Email_id" id="Email_id">Email_id <br></label>
+                <input type="Email_id" id="Email_id" name="Email_id" required>
+            </div>
+            <div class="inp">
+                <label for="Password" id="Password">Password <br></label>
+                <input type="Password" name="Password" />
+                <span class="container">
+                    <i class="fa fa-eye-slash" id="btn" onclick="togglepassword()"></i>
+                </span>
+
+            </div>
+            <div class="inp">
+                <label for="Confirm_password" id="Confirm_password">Confirm_password <br></label>
+                <input type="Password" id="Confirm_password" name="Confirm_password" required>
+            </div>
+            <button type="submit" id="sub-btn">Sign-up</button>
+        </form>
+        <button class="btn" id="verify_username">Verify Username</button>
+    </div>
+    <script src="/js/signup.js"></script>
+
+</body>
+
+</html>
